@@ -1,6 +1,6 @@
 
 #home-section, #habilidades-section, #contato-section{
-    background: url("/src/assets/img.jpg");
+    background-image: url("/src/assets/img.jpg");
     background-size: cover;
 }
 
