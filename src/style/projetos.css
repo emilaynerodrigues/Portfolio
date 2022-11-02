@@ -47,12 +47,12 @@
 }
 
 .program-web{
-    background: url("/src/assets/img-projetos/site.png") no-repeat center center;
+    background: url("../assets/img-projetos/site.png") no-repeat center center;
     background-size: cover;
 }
 
 .historico{
-    background: url("/src/assets/img-projetos/historico.png") no-repeat center center;
+    background: url("../assets/img-projetos/historico.png") no-repeat center center;
     background-size: cover;
 }
 
