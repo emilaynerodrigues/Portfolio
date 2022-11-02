@@ -57,7 +57,7 @@
 }
 
 .te-controla{
-    background: url("/src/assets/img-projetos/te-controla.png") no-repeat center center;
+    background: url("../assets/img-projetos/te-controla.png") no-repeat center center;
     background-size: cover;
 }
 
