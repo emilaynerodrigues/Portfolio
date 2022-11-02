@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style/header.css" />
+    <link rel="stylesheet" href="src/style/global.css" />
+    <link rel="stylesheet" href="src/style/home.css" />
+    <link rel="stylesheet" href="src/style/sobre.css" />
+    <link rel="stylesheet" href="src/style/habilidades.css" />
+    <link rel="stylesheet" href="src/style/projetos.css" />
+    <link rel="stylesheet" href="src/style/contato.css">
+
+    <title>Portfólio | Emilayne Rodrigues</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- <div class="header-center"> -->
+      <nav class="menu-right">
+        <input type="checkbox" id="check" />
+        <label for="check" class="check-btn">
+          <!-- Menu -->
+          <span class="hamburger"></span>
+        </label>
+        <label href="#home-section" class="logo">EMLX</label>
+        <ul class="nav-list" onclick="getElementById('check').checked=false;">
+          <li><a href="#home-section">HOME</a></li>
+          <li><a href="#sobre-section">SOBRE</a></li>
+          <li><a href="#habilidades-section">HABILIDADES</a></li>
+          <li><a href="#projetos-section">PROJETOS</a></li>
+          <li><a href="#contato-section">CONTATO</a></li>
+
+          <li class="hide-message">
+            Desenvolvido com 💚 por Emilayne Rodrigues
+          </li>
+        </ul>
+      </nav>
+      <!-- </div> -->
+    </header>
+
+    <main>
+      <section id="home-section">
+        <div class="container-section">
+          <div class="info-area">
+            <div class="welcome">
+              <h2 class="welcome-text">Olá, humanos</h2>
+            </div>
+            <div class="whoiam">
+              <div class="animated-title">
+                <h1 class="home-title static">
+                  SOU DEV <span class="dinamic"></span>
+                </h1>
+              </div>
+
+              <p class="text">
+                Sou iniciante em programação web e mobile, estudante de
+                informática, estou aprendendo UI/UX Designer e sou entusiasta de
+                redes de computadores. Para conhecer mais sobre mim, minhas
+                habilidades e meus projetos role para baixo ou clique nas opções
+                do menu.
+              </p>
+            </div>
+          </div>
+
+          <div class="img-area">
+            <img
+              src="src/assets/cat2.svg"
+              alt="cat astronaut"
+              class="img-size"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre-section">
+        <div class="container-section">
+          <div class="central-sec">
+            <div class="title-sec">
+              <h2 class="title">Sobre</h2>
+              <div class="sub-title">
+                <div class="line"></div>
+                <span class="text" id="text2">Quem sou eu</span>
+                <div class="line"></div>
+              </div>
+            </div>
+            <div class="body-sec">
+              <div class="img-area">
+                <img
+                  src="src/assets/dev.svg"
+                  alt="dev girl"
+                  class="img-size"
+                />
+              </div>
+              <div class="info-area">
+                <h1 class="title name"></h1>
+                <p class="text">
+                  Sou apaixonada por animais, plantas e front-end, tenho seis
+                  lindos gatos, muitas plantas e habilidades ainda em
+                  desenvolvimento em programação e design.
+                </p>
+                <p class="text">
+                  Sonho ser programadora web e mobile, mas também possuir
+                  conhecimento e habilidades na parte de manutenção e suporte,
+                  por este motivo venho aprimorando minhas compentências dentro
+                  da área de TI.
+                </p>
+                <p class="text">
+                  Para conhecer um pouco mais sobre cursos e diplomas que
+                  adquiri nesses anos, clique no botão abaixo e baixe meu
+                  currículo F:)
+                </p>
+
+                <button type="button" class="btn">
+                  <span>Download | CV</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades-section">
+        <div class="habilidades-container">
+          <div class="title-sec">
+            <h2 class="title">Habilidades</h2>
+          </div>
+          <div class="body-habilidades">
+            <div class="text-area-habilidades">
+              <p class="text" id="text-p">
+                Abaixo estão as ferramentas e tecnologias que venho
+                aperfeiçoando. Ainda não tenho total familiaridade com elas,
+                porém venho aprendendo e testando meus conhecimentos atráves de
+                projetos e wireframes entregues para meus cursos e ideias
+                particulares.
+              </p>
+            </div>
+
+            <div class="habilidades-boxes">
+              <!-- <div class="habilidade-area"> -->
+              <div class="habilidade">
+                <img
+                  src="src/assets/img-habilidades/html.png"
+                  alt="html"
+                  class="hab-img"
+                />
+                <img
+                  src="src/assets/img-habilidades/html2.png"
+                  alt="html"
+                  class="hab-img1"
+                />
+              </div>
+
+              <div class="habilidade">
+                <img
+                  src="src/assets/img-habilidades/css.png"
+                  alt="css"
+                  class="hab-img"
+                />
+                <img
+                  src="src/assets/img-habilidades/css2.png"
+                  alt="css"
+                  class="hab-img1"
+                />
+              </div>
+
+              <div class="habilidade">
+                <img
+                  src="src/assets/img-habilidades/javascript.png"
+                  alt="Javascript"
+                  class="hab-img"
+                />
+                <img
+                  src="src/assets/img-habilidades/javascript2.png"
+                  alt="JavaScript"
+                  class="hab-img1"
+                />
+              </div>
+
+              <div class="habilidade">
+                <img
+                  src="src/assets/img-habilidades/c++.png"
+                  alt="C++"
+                  class="hab-img"
+                />
+                <img
+                  src="src/assets/img-habilidades/c++2.png"
+                  alt="C++"
+                  class="hab-img1"
+                />
+              </div>
+
+              <div class="habilidade">
+                <img
+                  src="src/assets/img-habilidades/react-native.png"
+                  alt="React-Native"
+                  class="hab-img"
+                />
+                <img
+                  src="src/assets/img-habilidades/react-native2.png"
+                  alt="React-Native"
+                  class="hab-img1"
+                />
+              </div>
+
+              <div class="habilidade">
+                <img
+                  src="src/assets/img-habilidades/git.png"
+                  class="h-img"
+                  alt="Github"
+                />
+              </div>
+
+              <div class="habilidade">
+                <img
+                  src="src/assets/img-habilidades/figma.png"
+                  alt="Figma"
+                  class="hab-img"
+                />
+                <img
+                  src="src/assets/img-habilidades/figma2.png"
+                  alt="Figma"
+                  class="hab-img1"
+                />
+              </div>
+
+              <div class="habilidade">
+                <img
+                  src="src/assets/img-habilidades/vscode.png"
+                  alt="VSCode"
+                  class="hab-img"
+                />
+                <img
+                  src="src/assets/img-habilidades/vscode2.png"
+                  alt="VSCode"
+                  class="hab-img1"
+                />
+              </div>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos-section">
+        <div class="container-section">
+          <div class="central-sec">
+            <div class="title-sec">
+              <h2 class="title">Projetos</h2>
+              <div class="sub-title">
+                <div class="line"></div>
+                <span class="text" id="text2"
+                  >Desenvolvidos e em fase de criação</span
+                >
+                <div class="line"></div>
+              </div>
+            </div>
+
+            <div class="body-sec">
+              <div class="projeto-boxes">
+                <!-- projetos que existem -->
+                <div class="projeto-box program-web" id="open-btn-programweb">
+                  <span class="pro-name"> ProgramWeb </span>
+                </div>
+                <div class="projeto-box historico" id="open-btn-historico">
+                  <span class="pro-name"> Histórico Escolar </span>
+                </div>
+                <div class="projeto-box te-controla" id="open-btn-tecontrola">
+                  <span class="pro-name"> Te Controla </span>
+                </div>
+                <!--  -->
+
+                <!-- modals-->
+                <div class="modal-container" id="modal-container-programweb">
+                  <div class="modal-area">
+                    <div class="modal">
+                      <div class="modal-center">
+                        <div class="modal-head">
+                          <h1 class="title">ProgramWeb</h1>
+                          <button class="close-btn" id="close-btn-programweb">
+                            x
+                          </button>
+                        </div>
+
+                        <div class="modal-body">
+                          <p class="text text-black">
+                            O ProgramWeb é um site desenvolvido com o framework
+                            BootStrap e que serviu como projeto final do curso
+                            de Programador Web Básico que fiz em 2020 na
+                            Fundação Paulo Feitosa.
+                          </p>
+                          <p class="text text-black">
+                            O objetivo geral do site é passar informações
+                            básicas de HTML, CSS e JavaScript a programadores
+                            web iniciantes. E mostrar quais os principais
+                            editores de texto mais utilizados pro
+                            desenvolvedores.
+                          </p>
+                          <p class="text text-black">
+                            Nele é possível encontrar um breve resumo da
+                            história do HTML, CSS e Javascript. Além disso, ele
+                            contém as principais tags HTML, as propriedades CSS,
+                            formas de adicionar folhas de estilo a página Web e
+                            instruções de programação com JavaScript.
+                          </p>
+                          <p class="text text-black m-hide">
+                            O BootStrap passou por uma atualização, por este
+                            motivo algumas das funcionalidades do ProgramWeb
+                            precisam ser reescritas e modificadas para que
+                            tenham o correto funcionamento.
+                          </p>
+
+                          <div class="span-link">
+                            <span>
+                              <a
+                                href="https://emilaynerodrigues.github.io/Projeto-ProgramWeb/"
+                                target="_blank"
+                                >Clique aqui para acessar o ProgramWeb</a
+                              >
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-container" id="modal-container-historico">
+                  <div class="modal-area">
+                    <div class="modal">
+                      <div class="modal-center">
+                        <div class="modal-head">
+                          <h1 class="title">Histórico Escolar</h1>
+                          <button class="close-btn" id="close-btn-historico">
+                            x
+                          </button>
+                        </div>
+
+                        <div class="modal-body">
+                          <p class="text text-black">
+                            Esse pequeno programa de Histórico Escolar foi
+                            desenvolvido em C++ durante o segundo semestre do
+                            curso Técnico em Informática para a disciplina
+                            Estrutura de Dados.
+                          </p>
+                          <p class="text text-black">
+                            O professor passou o código de um sistema mais
+                            simples e lançou o desafio de criar um minisistema,
+                            onde deveria ter como menu principal as seguintes
+                            opções: 1- Inserir; 2 - Atualizar; 3 - Excluir; 4 -
+                            Pesquisar; 5 - Listar; 0 - Sair.
+                          </p>
+                          <p class="text text-black">
+                            Cada opção do menu de 1 a 5 deveria levar a uma nova
+                            tela para se trabalhar cada nova finalidade. O
+                            minisistema deveria ser todo modular, ou seja, com
+                            funções diretas ou auxiliares para cada finalidade.
+                          </p>
+                          <p class="text text-black hide-400">
+                            O minisistema possui uma interface simples, apenas
+                            para testar a funcionalidade de cada opção do menu
+                            principal e seus submenus.
+                          </p>
+
+                          <div class="span-link">
+                            <span>
+                              <a
+                                href="https://github.com/emilaynerodrigues/Projeto-HistoricoEscolarC-"
+                                target="_blank"
+                                >Clique aqui para acessar o código do
+                                programa</a
+                              >
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-container" id="modal-container-tecontrola">
+                  <div class="modal-area">
+                    <div class="modal">
+                      <div class="modal-center">
+                        <div class="modal-head">
+                          <h1 class="title">Te Controla</h1>
+                          <button class="close-btn" id="close-btn-tecontrola">
+                            x
+                          </button>
+                        </div>
+
+                        <div class="modal-body">
+                          <p class="text text-black">
+                            O Te Controla é um aplicativo mobile que está em
+                            desenvolvimento e irá ser apresentado como PCCT do
+                            curso Técnico em Informática.
+                          </p>
+                          <p class="text text-black">
+                            O principal objetivo do aplicativo é permitir que o
+                            usuário faça o controle financeiro pessoal e tenha
+                            uma visão das despesas feitas a cada mês.
+                          </p>
+                          <p class="text text-black">
+                            O aplicativo deve funcionar mais ou menos assim:
+                            Usuário faz login no sistema, caso ele não conta no
+                            aplicativo, o sistema deve permitir que ele faça o
+                            cadastro de uma nova conta. Tendo o feito o login, o
+                            usuário pode cadastrar as despesas e escolher a
+                            categoria que a despesa melhor se encaixa, os dados
+                            dessas despesas irão ser usados para gerar o
+                            relatório de todas os gastos feitos pelo usuário.
+                          </p>
+                          <p class="text text-black">
+                            O aplicativo está sendo desenvolvido com Expo,
+                            React-Native (biblioteca Javascript) e utilizará o
+                            Firebase como banco de dados.
+                          </p>
+
+                          <div class="span-link">
+                            <span>
+                              <a
+                                href="https://www.figma.com/file/JPrhbmWB9X7YQKByWQ193H/TE-CONTROLA?node-id=0%3A1"
+                                target="_blank"
+                              >
+                                Prototipo - Te Controla</a
+                              >
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+
+                <!-- projetos futuros - em breve - são escondidos em resoluções menores-->
+                <div class="projeto-box breve-hide">
+                  <div class="breve">
+                    <p>EM BREVE</p>
+                  </div>
+                </div>
+
+                <div class="projeto-box breve-hide">
+                  <div class="breve">
+                    <p>EM BREVE</p>
+                  </div>
+                </div>
+
+                <div class="projeto-box breve-hide">
+                  <div class="breve">
+                    <p>EM BREVE</p>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato-section">
+        <div class="container-section">
+          <div class="img-area">
+            <img src="src/assets/girl.svg" alt="dev girl" class="img-size" />
+          </div>
+
+          <div class="info-area">
+            <div class="title-sec title-contact">
+              <h2 class="title">Entre em contato comigo</h2>
+            </div>
+
+            <div class="text-area">
+
+              <p class="text">
+                Sinta-se a vontade para entrar em contato comigo e me dar dicas
+                sobre o que devo fazer para melhorar ou quais ferramentas devo
+                experimentar.
+              </p>
+            </div>
+
+            <div class="input-area">
+                <input type="text" name="" id="" class="input" placeholder="Nome">
+                <input type="text" name="" id="" class="input" placeholder="Sobrenome">
+                <input type="email" name="" id="" class="input input-email" placeholder="E-mail">
+                <input type="text" name="" id="" class=" input input-message" placeholder="Mensagem">
+            </div>
+              
+            <button type="button" class="btn">
+                  <span>Enviar</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="src/script/header.js"></script>
+    <script src="src/script/modal.js"></script>
+    <script src="src/script/animated-title.js"></script>
+    <script
+      crossorigin="anonymous"
+      src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"
+    ></script>
+  </body>
+</html>

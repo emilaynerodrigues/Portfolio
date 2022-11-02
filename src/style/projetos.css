@@ -1,0 +1,175 @@
+.projeto-boxes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 29.5px; */
+    justify-content: space-around;
+    align-items: center;
+
+    /* background-color: aqua; */
+}
+
+.projeto-box{
+    width: 30%;
+    height: 42%;
+    background-color: #edf2ef;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.breve{
+    width: 100%;
+    height: 30%;
+
+    background-color: #111;
+}
+
+.breve p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    color: #edf2ef;
+    /* cursor: pointer; */
+}
+
+.breve p:hover{
+    transition: .5s;
+    letter-spacing: 5px;
+    color: #08D665;
+}
+
+.program-web{
+    background: url("/src/assets/img-projetos/site.png") no-repeat center center;
+    background-size: cover;
+}
+
+.historico{
+    background: url("/src/assets/img-projetos/historico.png") no-repeat center center;
+    background-size: cover;
+}
+
+.te-controla{
+    background: url("/src/assets/img-projetos/te-controla.png") no-repeat center center;
+    background-size: cover;
+}
+
+.modal-container{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.modal-container.show{
+    display: block;
+}
+
+.modal-area{
+    height: 90%;
+    width: 100%;
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .7);
+
+}
+
+.modal{
+    height: 70%;
+    width: 80%;
+    position: fixed;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 50px;
+    background-color: #edf2ef;
+}
+
+.modal-center{
+    height: 100%;
+    /* width: 100%; */
+    /* padding: 40px; */
+
+    /* background-color: forestgreen; */
+}
+
+.modal-head{
+    /* width: 100%; */
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px 10px 60px;
+    border-radius: 40px 40px 0 0;
+
+    background-color: #111;
+}
+
+.close-btn{
+    width: 5%;
+    border: none;
+    color: #edf2ef;
+    font-size: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.modal-body{
+    /* width: 100%; */
+    height: 80%;
+    padding: 30px 60px 0 60px;
+
+    /* background-color: #08D665; */
+}
+
+.span-link{
+    margin-top: 20px;
+    width: 40%;
+    height: 10%;
+    background-color: #555;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.span-link:hover{
+    background-color: #08D665;
+    color: #111;
+}
+
+.span-link span a:hover{
+    color: #111;
+}
+
+.pro-name{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(3, 3, 3, 0.6);
+    opacity: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pro-name:hover{
+    opacity: 1;
+    transition: .5s;
+    color: #edf2ef;
+}

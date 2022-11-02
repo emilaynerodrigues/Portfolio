@@ -1,0 +1,39 @@
+
+#home-section, #habilidades-section, #contato-section{
+    background: url("/src/assets/img.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.welcome{
+    /* background-color: #736f72; */
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #08D665;
+}
+
+.welcome h2{
+    font-size: max(20px, 1.5vw);
+    color: #edf2ef;
+}
+
+
+.home-title {
+    position: relative;
+    margin: 25px 0px 25px 0px;
+    font-size: max(28px, 4.2vw);
+    font-weight: 600;
+    color: #08D665;
+    overflow: hidden;
+}
+
+.static{
+    color: #edf2ef;
+}
+
+.dinamic{
+    color: #08D665;
+}
+

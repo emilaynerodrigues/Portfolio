@@ -1,0 +1,29 @@
+#sobre-section, #projetos-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.name{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 20px;
+    height: 5vh;
+    width: 40%;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: max(16px, 1.2vw);
+    font-weight: 600;
+    color: #111;
+    background-color: #edf2ef;
+    transition: .5s;
+}
+
+.btn:hover{
+    background-color: #08D665;
+}

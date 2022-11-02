@@ -1,0 +1,80 @@
+#habilidades-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades-container{
+    height: 70%;
+    width: 80%;
+    margin-top: 10vh;
+    border: none;
+    border-radius: 50px;
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-habilidades{
+    height: 80%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: wheat; */
+}
+
+.text-area-habilidades{
+    width: 80%;
+    height: 20%;
+}
+
+.habilidades-boxes{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+
+    /* background-color: peru; */
+}
+
+.habilidade:hover{
+    background-color: #fff;
+    transform: scale(1.1);   
+}
+
+.habilidade{
+    width: 20%;
+    height: 30%;
+    background-color: #edf2ef;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s; 
+} 
+
+.habilidade img{
+    width: 35%;
+}
+
+.habilidade .hab-img1{
+    display: none;
+}
+
+.habilidade:hover .hab-img{
+    display: none;   
+}
+
+.habilidade:hover .hab-img1{
+    display: block;
+    transition: .5s; 
+}
