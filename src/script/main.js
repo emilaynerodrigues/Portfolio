@@ -7,7 +7,7 @@ window.onscroll = function () {
   console.log(top);
   if (top >= 80) {
     header.classList.add("active");
-    if (top >= 570) {
+    if (top >= 620) {
       btn.classList.add("active-btn");
     }
     else{
