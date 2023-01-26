@@ -105,7 +105,7 @@ section {
 #home,
 #habilidades,
 #contato {
-  background: url("src/img/background-stars.jpg") no-repeat center center;
+  background: url("../img/background-stars.jpg") no-repeat center center;
   background-size: cover;
 }
 
