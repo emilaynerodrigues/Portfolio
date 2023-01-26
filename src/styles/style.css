@@ -107,6 +107,7 @@ section {
 #contato {
   background: url("../img/background-stars.jpg") no-repeat center center;
   background-size: cover;
+  background-color: #0d0d0d;
 }
 
 #sobre,
