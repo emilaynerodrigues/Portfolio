@@ -420,7 +420,7 @@ p {
   }
 }
 
-.social-box:hover{
+.social-box:hover {
   animation-play-state: paused;
 }
 
@@ -467,7 +467,7 @@ p {
   align-items: center;
   font-size: 1.7rem;
   color: #0d0d0d90;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .social-item:hover {
@@ -478,7 +478,7 @@ p {
 .social-item i:hover {
   color: #0d0d0d;
   font-size: 1.8rem;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .content-form {
@@ -693,7 +693,53 @@ input {
   #contato {
     height: 100vh;
   }
+
   .title-contato {
     font-size: 1.9rem;
+  }
+
+  .content-start h4{
+    margin-top: 2rem;
+  }
+
+  #contato {
+    overflow: hidden;
+  }
+
+  .img-contato {
+    height: 30%;
+    width: 40%;
+  }
+
+  .circle {
+    height: 60%;
+    width: 100%;
+    top: 20%;
+    right: 0%;
+  }
+
+  .social-box {
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+  }
+
+  .social-box div:nth-child(1) {
+    top: -5%;
+    left: 42%;
+  }
+  .social-box div:nth-child(2) {
+    top: 45%;
+    right: -5%;
+  }
+  .social-box div:nth-child(3) {
+    top: 45%;
+    left: -5%;
+  }
+  .social-box div:nth-child(4) {
+    bottom: -5%;
+    right: 42%;
   }
 }
