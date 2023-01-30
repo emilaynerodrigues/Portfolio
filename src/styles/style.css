@@ -698,12 +698,16 @@ input {
     font-size: 1.9rem;
   }
 
-  .content-start h4{
+  .content-start h4 {
     margin-top: 2rem;
   }
 
   #contato {
     overflow: hidden;
+  }
+  
+  .inner-content {
+    background: radial-gradient(15rem, #f3be2b62, transparent 50%);
   }
 
   .img-contato {
