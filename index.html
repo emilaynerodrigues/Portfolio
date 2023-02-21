@@ -5,16 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EMLX | Emilayne Rodrigues</title>
+
+    <!-- css -->
     <link rel="stylesheet" href="src/styles/style.css" />
-    <script src="src/script/main.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/5b0674db03.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      crossorigin="anonymous"
-      src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"
-    ></script>
+
+    <!-- css swiper -->
+    <link rel="stylesheet" href="src/styles/swiper-bundle.min.css" />
   </head>
 
   <body>
@@ -43,7 +39,8 @@
             <a href="#contato">CONTATO</a>
           </li>
           <li class="hide-message">
-            Desenvolvido com 💚 por Emilayne Rodrigues
+            Desenvolvido com <i class="fa-solid fa-heart"></i> por Emilayne
+            Rodrigues
           </li>
         </ul>
       </nav>
@@ -100,12 +97,12 @@
           <!-- container title ends -->
           <div class="content teste">
             <!-- left content-box starts-->
-            <div class="content-box">
+            <div class="content-box img-content">
               <img class="img" src="src/img/dev.svg" alt="" />
             </div>
             <!--  content-box ends-->
             <!-- right content-box starts-->
-            <div class="content-box content-sb">
+            <div class="content-box content-sa">
               <div class="animated-name">
                 <h1 class="name title"></h1>
               </div>
@@ -271,37 +268,161 @@
               <div class="line"></div>
             </div>
           </div>
-          <!-- container title ends -->
-          <div class="content margin">
-            <!-- content-box starts-->
-            <div class="box">
-              <!-- habilidades starts-->
-              <div class="box-item projeto program-web">
-                <span class="pro-name"> ProgramWeb </span>
-              </div>
 
-              <div class="box-item projeto historico">
-                <span class="pro-name"> Histórico Escolar </span>
-              </div>
+          <div class="swiper slide-container">
+            <div class="slide-content mySwiper">
+              <div class="card-wrapper swiper-wrapper">
+                <!-- program web -->
+                <div class="swiper-slide card">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img
+                        src="src/img/img-projetos/site.png"
+                        alt=""
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="card-name">ProgramWeb</h2>
+                    <p class="description">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Eligendi perferendis itaque omnis, iusto maxime, nulla
+                      quibusdam quis repudiandae impedit eius veniam
+                      perspiciatis nobis aperiam autem.
+                    </p>
+                    <div class="btn-content">
+                      <a
+                        class="btn btn-link"
+                        href="https://github.com/emilaynerodrigues/Projeto-ProgramWeb"
+                        target="_blank"
+                      >
+                        <span>Github</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-              <div class="box-item projeto te-controla">
-                <span class="pro-name"> Te Controla </span>
-              </div>
+                <!-- historico -->
+                <div class="swiper-slide card">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img
+                        src="src/img/img-projetos/historico.png"
+                        alt=""
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="card-name">Histórico Escolar</h2>
+                    <p class="description">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Eligendi perferendis itaque omnis, iusto maxime, nulla
+                      quibusdam quis repudiandae impedit eius veniam
+                      perspiciatis nobis aperiam autem.
+                    </p>
+                    <div class="btn-content">
+                      <a
+                        class="btn btn-link"
+                        href="https://github.com/emilaynerodrigues/Projeto-HistoricoEscolarC-"
+                        target="_blank"
+                      >
+                        <span>Github</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-              <div class="box-item projeto hide">
-                <div class="breve">EM BREVE</div>
-              </div>
+                <!-- te controla -->
+                <div class="swiper-slide card">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img
+                        src="src/img/img-projetos/te-controla.png"
+                        alt=""
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="card-name">Te Controla</h2>
+                    <p class="description">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Eligendi perferendis itaque omnis, iusto maxime, nulla
+                      quibusdam quis repudiandae impedit eius veniam
+                      perspiciatis nobis aperiam autem.
+                    </p>
+                    <div class="btn-content">
+                      <a
+                        class="btn btn-link"
+                        href="https://www.figma.com/file/Fnw61AavzphiW40P2aAPs7/te-controla?node-id=0%3A1&t=XlwzV30VMbOBWsPa-0"
+                        target="_blank"
+                      >
+                        <span>Figma</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-              <div class="box-item projeto hide">
-                <div class="breve">EM BREVE</div>
-              </div>
+                <!-- em breve -->
+                <div class="swiper-slide card">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img
+                        src="src/img/img-projetos/site.png"
+                        alt=""
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="card-name">ProgramWeb</h2>
+                    <p class="description">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Eligendi perferendis itaque omnis, iusto maxime, nulla
+                      quibusdam quis repudiandae impedit eius veniam
+                      perspiciatis nobis aperiam autem.
+                    </p>
+                    <div class="btn-content">
+                      <a class="btn btn-link">
+                        <span>Github</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-              <div class="box-item projeto hide">
-                <div class="breve">EM BREVE</div>
+                <!-- em breve -->
+                <div class="swiper-slide card">
+                  <div class="image-content">
+                    <div class="card-image">
+                      <img
+                        src="src/img/img-projetos/site.png"
+                        alt=""
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="card-name">Loading...</h2>
+                    <p class="description">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Eligendi perferendis itaque omnis, iusto maxime, nulla
+                      quibusdam quis repudiandae impedit eius veniam
+                      perspiciatis nobis aperiam autem.
+                    </p>
+                    <div class="btn-content">
+                      <a class="btn btn-link">
+                        <span>Github</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <!-- habilidades ends -->
             </div>
-            <!-- content-box ends-->
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -400,5 +521,23 @@
       <a href="#" class="btn-back"><i class="fa-solid fa-arrow-up"></i></a>
     </main>
     <!-- main ends -->
+
+    <!-- js swiper -->
+    <script src="src/script/swiper-bundle.min.js"></script>
+
+    <!-- js -->
+    <script src="src/script/main.js"></script>
+
+    <!-- js font awesome -->
+    <script
+      src="https://kit.fontawesome.com/5b0674db03.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- js type it -->
+    <script
+      crossorigin="anonymous"
+      src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"
+    ></script>
   </body>
 </html>

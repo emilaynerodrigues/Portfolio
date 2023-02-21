@@ -9,8 +9,7 @@ window.onscroll = function () {
     header.classList.add("active");
     if (top >= 620) {
       btn.classList.add("active-btn");
-    }
-    else{
+    } else {
       btn.classList.remove("active-btn");
     }
   } else {
@@ -70,3 +69,34 @@ document.addEventListener("DOMContentLoaded", () => {
     .go();
 });
 /*animated title ends*/
+
+/* swiper starts */
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  // loop: true,
+  centerSlide: 'true',
+  fade: 'true',
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints:{
+    0:{
+      slidesPerView: 1,
+    },
+    520:{
+      slidesPerView: 2,
+    },
+    950:{
+      slidesPerView: 3,
+    }
+  },
+});
