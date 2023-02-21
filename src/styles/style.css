@@ -564,7 +564,7 @@ form h4,
   font-size: 1rem;
   font-weight: 500;
 }
-input {
+input, .input-msg {
   width: 99%;
   border: none;
   border-radius: 0.3rem;
@@ -572,12 +572,12 @@ input {
   color: #0d0d0d;
 }
 
-.input-text {
-  height: 2rem;
+.input-msg{
+  padding-top: .5rem;
 }
 
-.input-msg {
-  height: 10rem;
+.input-text {
+  height: 2rem;
 }
 
 .btn-back {
