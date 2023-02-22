@@ -370,7 +370,7 @@ p {
 
 .card-image {
   position: relative;
-  height: 10rem;
+  height: 11rem;
   width: 100%;
 }
 
@@ -416,20 +416,22 @@ p {
   width: 2.5rem;
   background-color: #08d665;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
 .btn-link i {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.4rem;
   color: #333333bb;
-  transition: all 0.5s;
 }
 
 .btn-link i:hover {
   color: #333;
-  transform: rotate(360deg);
+  animation: rotation 2s linear infinite;
 }
 
 .swiper-pagination-bullet {
@@ -779,11 +781,15 @@ input,
     height: 7.5rem;
   }
 
-  .projeto {
-    width: 100%;
-    height: 11rem;
+  .card {
+    height: 28rem !important;
+    
   }
 
+  .card-image{
+    height: 13rem;
+  }
+  
   .margin {
     margin-top: 1rem;
   }
