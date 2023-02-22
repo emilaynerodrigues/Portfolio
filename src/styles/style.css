@@ -26,6 +26,7 @@ header {
   justify-content: center;
   background-color: transparent;
   transition: 1s;
+  box-shadow:  0.1rem 0.1rem rgba(235, 233, 233, 0.048);
 }
 
 header.active {
