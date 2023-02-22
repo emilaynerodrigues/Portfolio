@@ -73,10 +73,11 @@ document.addEventListener("DOMContentLoaded", () => {
 /* swiper starts */
 
 var swiper = new Swiper(".mySwiper", {
+  rewind: true,
   slidesPerView: 3,
   spaceBetween: 30,
   // loop: true,
-  centerSlide: 'true',
+  // centeredSlides: 'true',
   fade: 'true',
   pagination: {
     el: ".swiper-pagination",

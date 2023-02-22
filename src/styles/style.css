@@ -6,6 +6,7 @@
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
   color: #edf2ef;
+  border: none;
 }
 
 body,
@@ -63,8 +64,8 @@ a {
   position: relative;
   display: inline-block;
 }
-
-.menu-item::before {
+/* underline hover effect starts */
+.menu-item::before, .card::before {
   content: "";
   position: absolute;
   left: 0;
@@ -78,10 +79,17 @@ a {
   transition: scale 0.35s;
 }
 
-.menu-item:hover::before {
-  scale: 1;
+.card::before{
+  height: .8rem;
+  border-radius: 0;
+  border-bottom-left-radius: .8rem;
+  border-bottom-right-radius: .8rem;
 }
 
+.menu-item:hover::before, .card:hover::before {
+  scale: 1;
+}
+/* underline hover effect ends */
 .check-btn {
   display: none;
 }
@@ -338,19 +346,26 @@ p {
 
 .slide-content {
   height: 95%;
-  margin: 0 1.5rem;
+  /* margin: 0 0rem; */
   overflow: hidden;
   border-radius: 0.8rem;
 }
 
-.swiper-slide {
-  background: #ffff87;
+.card-wrapper {
+  transform: translate3d(0px, 0px, 0px);
+  display: flex;
+  align-items: center;
 }
 
 .card {
-  height: 320px;
+  height: 25rem !important;
   background: #edf2ef;
+  border: none;
   border-radius: 0.8rem;
+}
+
+.card:hover{
+  cursor: pointer;
 }
 
 .card-image {
@@ -372,7 +387,7 @@ p {
 }
 
 .card-content {
-  margin: 1.5rem;
+  margin: 1.2rem;
 }
 
 .card-name {
@@ -393,48 +408,37 @@ p {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  gap: 1.5rem;
 }
 
-.btn-content .btn-link {
+.btn-link {
   height: 2.5rem;
-  width: 8rem;
-  border-radius: 0.5rem;
+  width: 2.5rem;
   background-color: #08d665;
-  cursor: pointer;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.158);
-}
-
-.btn-content .btn-link span {
-  color: #333;
-  font-weight: 500;
-}
-
-.swiper-navBtn {
-  color: #0d0d0d !important;
-}
-
-.swiper-button-prev{
-  left: 0 !important;
-}
-
-.swiper-button-next{
-  right: 0 !important;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  background-color: #edf2ef;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.158);
-  width: 2.5rem !important;
-  height: 2.5rem !important;
   border-radius: 50%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 1.2rem !important;
-  font-weight: 500 !important;
+.btn-link i {
+  font-size: 1.4rem;
+  color: #333333bb;
+  transition: all 0.5s;
+}
+
+.btn-link i:hover {
+  color: #333;
+  transform: rotate(360deg);
+}
+
+.swiper-pagination-bullet {
+  background: #edf2ef !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #08d665 !important;
 }
 
 /* PROJETO ENDS */
@@ -564,7 +568,8 @@ form h4,
   font-size: 1rem;
   font-weight: 500;
 }
-input, .input-msg {
+input,
+.input-msg {
   width: 99%;
   border: none;
   border-radius: 0.3rem;
@@ -572,8 +577,8 @@ input, .input-msg {
   color: #0d0d0d;
 }
 
-.input-msg{
-  padding-top: .5rem;
+.input-msg {
+  padding-top: 0.5rem;
 }
 
 .input-text {
