@@ -565,9 +565,10 @@ form h3 {
 
 form h4,
 .content-start h4 {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: .9rem;
+  font-weight: 400;
 }
+
 input,
 .input-msg {
   width: 99%;
@@ -586,31 +587,50 @@ input,
 }
 
 .btn-back {
-  width: 3rem;
-  height: 3rem;
-  border: none;
-  border-radius: 5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
   background-color: #08d665;
   position: fixed;
   right: 2rem;
   bottom: 1rem;
-  justify-content: center;
-  align-items: center;
-  display: flex;
   opacity: 0;
   pointer-events: none;
-  transition: 1s;
+  transition: all .5s;
 }
 
 .btn-back i {
-  color: #0d0d0d;
-  font-size: 1.2rem;
+  color: #222121;
+  font-size: 1rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-back.active-btn {
   opacity: 1;
-  transition: 1s;
+  transition: all .5s;
   pointer-events: all;
+}
+
+.btn-back:hover{
+  background-color: #08d665;
+}
+
+.btn-back i:hover {
+  color: #222121;
+  animation: moveUpDown .8s linear infinite;
+}
+
+@keyframes moveUpDown{
+  0%, 100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-3px);
+  }
 }
 
 /* main - section home ends */
