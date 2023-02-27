@@ -387,9 +387,7 @@
                 <!-- em breve -->
                 <div class="swiper-slide card card-breve">
                   <div class="image-content">
-                    <div class="card-image breve">
-                      <a class="btn" href="src/pages/index.html"></a>
-                    </div>
+                    <div class="card-image breve"></div>
                   </div>
                   <div class="card-content">
                     <h2 class="card-name">Loading...</h2>
@@ -466,11 +464,27 @@
                   method="POST"
                 >
                   <h3>Envie uma mensagem</h3>
+                  <!-- Messagem mostrada quando chegar o e-mail -->
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="Alguém enviou uma mensagem pelo Portfolio!"
+                  />
+
+                  <!-- Caminho da página de agradecimento -->
                   <input
                     type="hidden"
                     name="_next"
-                    value="https://emilaynerodrigues.github.io/Portfolio/Thank-You"
+                    value="https://emilaynerodrigues.github.io/Portfolio/src/pages/index.html"
                   />
+
+                  <!-- reCaptcha desabilitada -->
+                  <input type="hidden" name="_captcha" value="false" /><input
+                    type="hidden"
+                    name="_captcha"
+                    value="false"
+                  />
+                  <!-- Campos do formulários a seguir -->
                   <input
                     type="text"
                     name="name"
