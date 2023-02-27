@@ -384,10 +384,12 @@
                   </div>
                 </div>
 
-                 <!-- em breve -->
-                 <div class="swiper-slide card card-breve">
+                <!-- em breve -->
+                <div class="swiper-slide card card-breve">
                   <div class="image-content">
-                    <div class="card-image breve"></div>
+                    <div class="card-image breve">
+                      <a class="btn" href="src/pages/index.html"></a>
+                    </div>
                   </div>
                   <div class="card-content">
                     <h2 class="card-name">Loading...</h2>
@@ -395,8 +397,8 @@
                   </div>
                 </div>
 
-                 <!-- em breve -->
-                 <div class="swiper-slide card card-breve">
+                <!-- em breve -->
+                <div class="swiper-slide card card-breve">
                   <div class="image-content">
                     <div class="card-image breve"></div>
                   </div>
@@ -405,7 +407,6 @@
                     <p class="description">Estou preparando algo incrível!</p>
                   </div>
                 </div>
-              
               </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -460,29 +461,39 @@
             <!-- content-box starts-->
             <div class="content-box bg-color hide">
               <div class="content-form">
-                <form action="">
+                <form
+                  action="https://formsubmit.co/68e0b7aa0430bd3153171adcd9d59dca"
+                  method="POST"
+                >
                   <h3>Envie uma mensagem</h3>
-
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://emilaynerodrigues.github.io/Portfolio/Thank-You"
+                  />
                   <input
                     type="text"
-                    name=""
+                    name="name"
                     id=""
                     placeholder="Nome:"
                     class="input-text"
+                    required
                   />
                   <input
                     type="email"
-                    name=""
+                    name="email"
                     id=""
                     placeholder="E-mail:"
                     class="input-text"
+                    required
                   />
                   <input
                     type="text"
-                    name=""
+                    name="assunto"
                     id=""
                     placeholder="Assunto:"
                     class="input-text"
+                    required
                   />
                   <h4>
                     Diga o que achou sobre o portfólio e dê dicas de novos
@@ -491,10 +502,11 @@
                   <textarea
                     class="input-msg"
                     placeholder="Mensagem:"
-                    name=""
+                    name="message"
                     id=""
                     cols="30"
                     rows="8"
+                    required
                   ></textarea>
                   <button type="submit" class="btn">Enviar</button>
                 </form>

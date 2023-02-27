@@ -336,7 +336,6 @@ p {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: 0.5s;
 }
 
 .box-item img {
@@ -353,7 +352,6 @@ p {
 
 .box-item:hover .hab-img1 {
   display: block;
-  transition: 0.5s;
 }
 
 /* PROJETO STARTS */
