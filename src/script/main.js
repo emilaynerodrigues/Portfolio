@@ -1,13 +1,13 @@
 /* header configuração scroll starts*/
 const header = document.querySelector(".header");
-const btn = document.querySelector(".btn-back");
+const btn = document.querySelector(".btn-back i");
 
 window.onscroll = function () {
   var top = window.scrollY;
   console.log(top);
   if (top >= 80) {
     header.classList.add("active");
-    if (top >= 620) {
+    if (top >= 400) {
       btn.classList.add("active-btn");
     } else {
       btn.classList.remove("active-btn");
