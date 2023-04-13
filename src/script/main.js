@@ -20,7 +20,7 @@ window.onscroll = function () {
 function scrollToTop(){
   window.scrollTo({
     top: 0,
-    behavior: 'smooth',
+    behavior: "smooth",
   })
 }
 /* header configuração scroll ends*/
