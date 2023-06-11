@@ -9,8 +9,8 @@ No momento, minha maior meta é finalizar o aplicativo Te Controla e avançar no
 
 Espero que se diverta e obtenha informações suficientes sobre quem sou! :)
 
-## HOME
+## Demonstração
 
-![Screenshot](screenshot.png)
+![Demonstração do Relógio Animado](demo.gif)
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
