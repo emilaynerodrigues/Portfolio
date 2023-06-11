@@ -9,7 +9,7 @@ No momento, minha maior meta é finalizar o aplicativo Te Controla e avançar no
 
 Espero que se diverta e obtenha informações suficientes sobre quem sou! :)
 
-## HOME
+## Screenshot
 
 ![Screenshot](screenshot.png)
 
