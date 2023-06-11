@@ -11,6 +11,16 @@ Espero que se diverta e obtenha informações suficientes sobre quem sou! :)
 
 ## Demonstração
 
-![Demonstração do Relógio Animado](demo.gif)
+![Demonstração](demo.gif)
+
+## Tecnologias Utilizadas
+
+- HTML
+- CSS
+- JavaScript
+- Typeit JS
+- Swiper JS
+- FontAwesome
+- Form Submit
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
