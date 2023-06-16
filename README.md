@@ -9,6 +9,8 @@ No momento, minha maior meta é finalizar o aplicativo Te Controla e avançar no
 
 Espero que se diverta e obtenha informações suficientes sobre quem sou! :)
 
+Link de acesso: https://emilaynerodrigues.github.io/Portfolio/
+
 ## Demonstração
 
 ![Demonstração](demo.gif)
