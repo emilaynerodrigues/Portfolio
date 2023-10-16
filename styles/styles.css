@@ -879,7 +879,7 @@
   #projetos .swiper-pagination-bullets.swiper-pagination-horizontal,
   #projetos .swiper-pagination-custom,
   #projetos .swiper-pagination-fraction {
-    bottom: 30px;
+    bottom: 20px;
   }
   #projetos .swiper-pagination-bullet {
     width: 2.5rem;
@@ -912,7 +912,7 @@ section {
   display: flex;
   height: 100vh;
   justify-content: center;
-  background-image: url("/assets/background-stars.jpg");
+  background-image: url("assets/background-stars.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }

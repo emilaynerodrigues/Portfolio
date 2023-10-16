@@ -240,51 +240,13 @@
             }
         }
 
-        // .project-info {
-        //     padding: 3rem;
-
-        //     .title {
-
-        //         div {
-        //             height: 3rem;
-        //         }
-
-        //         p {
-        //             font-size: 2rem;
-        //         }
-        //     }
-
-        //     .description {
-        //         font-size: 1.4rem;
-        //         font-weight: 300;
-        //         line-height: 2rem;
-        //         padding: 2rem 0;
-
-        //     }
-
-        //     .icons {
-        //         a {
-        //             height: 3.5rem;
-        //             width: 3.5rem;
-
-        //             i {
-        //                 font-size: 2rem;
-        //                 color: $black-normal
-        //             }
-
-        //             img {
-        //                 height: 60%;
-        //                 width: 60%;
-        //             }
-        //         }
-        //     }
-        // }
+        
 
         .swiper-pagination-bullets,
         .swiper-pagination-bullets.swiper-pagination-horizontal,
         .swiper-pagination-custom,
         .swiper-pagination-fraction {
-            bottom: 30px;
+            bottom: 20px;
         }
 
         .swiper-pagination-bullet {
