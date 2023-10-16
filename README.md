@@ -19,10 +19,10 @@ Link de acesso: https://emilaynerodrigues.github.io/Portfolio/
 
 - HTML
 - CSS
+- SASS
 - JavaScript
 - Typeit JS
 - Swiper JS
 - FontAwesome
-- Form Submit
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
