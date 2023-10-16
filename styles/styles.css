@@ -912,7 +912,7 @@ section {
   display: flex;
   height: 100vh;
   justify-content: center;
-  background-image: url("/assets/bg-stars.jpg");
+  background-image: url("assets/bg-stars.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
