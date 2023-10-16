@@ -1,0 +1,922 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  border-bottom: 0.1rem solid rgba(164, 158, 158, 0.2078431373);
+  transition: all 0.3s;
+}
+
+.header.active-header {
+  background-color: #131212;
+}
+
+.header-content {
+  padding: 1.2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Sora", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #08D665;
+}
+
+#check,
+.check-btn {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  gap: 5rem;
+}
+
+.nav-item {
+  color: #D9D9D9;
+  font-weight: 500;
+  transition: 0.3s all;
+}
+
+.nav-item:hover {
+  color: #08D665;
+  font-weight: 600;
+}
+
+@media (max-width: 796px) {
+  header {
+    background-color: #131212;
+  }
+  nav {
+    flex-direction: row-reverse;
+  }
+  .nav-list {
+    position: absolute;
+    width: 50%;
+    min-height: calc(100vh - 4rem);
+    background-color: #131212;
+    top: 4rem;
+    right: -100%;
+    flex-direction: column;
+    gap: 5rem;
+    padding-top: 2rem;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .check-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #08D665;
+  }
+  .hamburger {
+    border-top: 0.2rem solid;
+    width: 2rem;
+    color: #08D665;
+  }
+  .hamburger::before,
+  .hamburger::after {
+    content: " ";
+    display: block;
+    border-top: 0.2rem solid;
+    width: 2rem;
+    background: currentColor;
+    margin-top: 0.4rem;
+    position: relative;
+    transition: 0.3s;
+  }
+  #check:checked ~ .nav-list {
+    right: 0;
+  }
+  #check:checked ~ .check-btn .hamburger {
+    border-top-color: transparent;
+  }
+  #check:checked ~ .check-btn .hamburger::before {
+    transform: rotate(135deg);
+  }
+  #check:checked ~ .check-btn .hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.6rem;
+  }
+}
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+.flex {
+  flex: 1;
+}
+
+.content-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.content-head h1 {
+  font-size: 2.6rem;
+  color: #08D665;
+}
+.content-head p,
+.content-head span {
+  text-align: center;
+  max-width: 1100px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 2rem 0;
+}
+
+.box-tag {
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  border: 0.25rem solid #08D665;
+}
+.box-tag p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.home-title {
+  font-size: 6.6rem;
+  padding: 1.5rem 0;
+}
+.home-title span {
+  font-size: 7rem;
+  color: #08D665;
+}
+
+.home-description {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.home-img {
+  padding: 8rem;
+}
+
+.skill-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 17rem;
+  height: 17rem;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s;
+  box-shadow: 4px 9px 14px 6px rgba(0, 0, 0, 0.31);
+}
+.skill-item img {
+  width: 80px;
+}
+.skill-item span {
+  text-align: center;
+  font-size: 1.4rem;
+  padding-top: 1.5rem;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+.tag {
+  position: absolute;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.1rem;
+  transform: rotate(-90deg);
+}
+.tag span {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.tag .line {
+  width: 7rem;
+  height: 0.3rem;
+  background: #08D665;
+}
+
+.detail-lines {
+  position: absolute;
+  right: 8%;
+  display: flex;
+  flex-direction: column;
+}
+.detail-lines div {
+  height: 22rem;
+  width: 0.3rem;
+  background: #A49E9E;
+}
+
+#projetos {
+  margin-bottom: -3.5rem;
+}
+
+/* CONTATO */
+.flex-contato {
+  padding: 0;
+  width: 100%;
+}
+
+.contato-content {
+  display: flex;
+  height: 100%;
+  padding-top: 4rem;
+}
+
+.planets,
+.hover-content {
+  width: 50vw;
+  height: 100%;
+}
+
+.image-container {
+  height: 70%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+.image-container img {
+  width: 70%;
+}
+
+.image-container.show-image {
+  opacity: 1;
+}
+
+.sun {
+  height: 16rem;
+  width: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 60;
+}
+.sun img {
+  height: 70%;
+  width: 70%;
+  z-index: 60;
+}
+
+.planets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outline {
+  border: dotted 0.1rem #A49E9E;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.figma-outline {
+  height: 20rem;
+  width: 20rem;
+  z-index: 40;
+  transform: rotate(90deg);
+}
+
+.instagram-outline {
+  height: 32rem;
+  width: 32rem;
+  z-index: 30;
+  transform: rotate(180deg);
+}
+
+.github-outline {
+  height: 44rem;
+  width: 44rem;
+  z-index: 20;
+  transform: rotate(280deg);
+}
+
+.planet {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  position: absolute;
+}
+.planet i {
+  font-size: 1.9rem;
+  color: #010101;
+}
+
+.figma {
+  background-color: #FE9150;
+  box-shadow: 1px 1px 8px 1px #ffb95d;
+  animation: orbitFigma 15s linear infinite;
+}
+.figma i {
+  transform: rotate(-90deg);
+}
+
+.instagram {
+  background-color: #63d7e7;
+  box-shadow: 1px 1px 8px 1px #7cfae5;
+  animation: orbitInstagram 15s linear infinite;
+}
+.instagram i {
+  transform: rotate(-180deg);
+}
+
+.github {
+  background-color: #d83b5a;
+  box-shadow: 1px 1px 8px 1px #fd5759;
+  animation: orbitGithub 17s linear infinite;
+}
+.github i {
+  transform: rotate(-280deg);
+}
+
+@keyframes orbitFigma {
+  from {
+    transform: rotate(0deg) translateX(10rem) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translateX(10rem) rotate(360deg);
+  }
+}
+@keyframes orbitInstagram {
+  from {
+    transform: rotate(0deg) translateX(16.5rem) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translateX(16.5rem) rotate(360deg);
+  }
+}
+@keyframes orbitGithub {
+  from {
+    transform: rotate(0deg) translateX(21.5rem) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translateX(21.5rem) rotate(360deg);
+  }
+}
+.planet:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 1.5rem 0;
+  width: 100%;
+  position: relative;
+  bottom: 3.5rem;
+}
+.footer p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer p span i {
+  font-size: 1.2rem;
+  color: #08D665;
+}
+
+.btn-scrool {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 5rem;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #08D665;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 100;
+}
+.btn-scrool i {
+  font-size: 1.6rem;
+}
+
+.btn-scrool:hover {
+  animation: moveUpDown 1.5s linear infinite;
+}
+
+.active-btn {
+  opacity: 1;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+@media screen and (min-width: 1441px) {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .skills {
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  .skills {
+    max-width: 1000px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hidden {
+    display: none;
+  }
+  .container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  .flex-row {
+    flex-direction: column;
+  }
+  #home .flex-row {
+    flex-direction: column-reverse;
+  }
+  #home .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #home .box-tag {
+    margin-top: 1.5rem;
+  }
+  #home .home-title {
+    text-align: center;
+    font-size: 5.5rem;
+    padding: 2.5rem 0;
+  }
+  #home .home-title span {
+    font-size: 5.5rem;
+    color: #08D665;
+  }
+  #home .home-description {
+    font-size: 1.8rem;
+  }
+  #home .home-img {
+    padding: 6rem 0 0 0;
+    height: 100%;
+  }
+  #contato .container {
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+  #contato .contato-content {
+    height: 80%;
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+  }
+  #contato .planets {
+    width: 100%;
+    height: 70%;
+  }
+  #contato .hover-content {
+    width: 100%;
+    height: 20%;
+  }
+  #contato .hover-content.flex {
+    flex: none;
+  }
+  #contato .image-container {
+    display: none;
+  }
+  #contato .image-container.show-image {
+    display: none;
+  }
+  #contato .planet {
+    height: 4rem;
+    width: 4rem;
+  }
+  #contato .sun {
+    height: 16rem;
+    width: 16rem;
+  }
+  #contato .sun img {
+    height: 70%;
+    width: 70%;
+  }
+  #contato .figma-outline {
+    height: 20rem;
+    width: 20rem;
+  }
+  #contato .instagram-outline {
+    height: 35rem;
+    width: 35rem;
+  }
+  #contato .github-outline {
+    height: 50rem;
+    width: 50rem;
+  }
+  @keyframes orbitFigma {
+    from {
+      transform: rotate(0deg) translateX(10rem) rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg) translateX(10rem) rotate(360deg);
+    }
+  }
+  @keyframes orbitInstagram {
+    from {
+      transform: rotate(0deg) translateX(17.5rem) rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg) translateX(17.5rem) rotate(360deg);
+    }
+  }
+  @keyframes orbitGithub {
+    from {
+      transform: rotate(0deg) translateX(25rem) rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg) translateX(25rem) rotate(360deg);
+    }
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .content-head .uppercase {
+    font-size: 2rem;
+  }
+  .content-head p {
+    font-size: 1.4rem;
+  }
+  #home .home-title {
+    font-size: 3.5rem;
+  }
+  #home .home-title span {
+    font-size: 3.5rem;
+  }
+  #home .home-description {
+    font-size: 1.4rem;
+  }
+  #home .home-img {
+    padding: 7rem 0 0 0;
+  }
+  #skills .skill-item {
+    width: 12rem;
+    height: 12rem;
+    transition: all 0.3s;
+  }
+  #skills .skill-item img {
+    width: 5rem;
+  }
+  #contato .planet {
+    height: 3rem;
+    width: 3rem;
+  }
+  #contato .sun {
+    height: 14rem;
+    width: 14rem;
+  }
+  #contato .sun img {
+    height: 60%;
+    width: 60%;
+  }
+  #contato .figma-outline {
+    height: 14rem;
+    width: 14rem;
+  }
+  #contato .instagram-outline {
+    height: 22rem;
+    width: 22rem;
+  }
+  #contato .github-outline {
+    height: 30rem;
+    width: 30rem;
+  }
+  @keyframes orbitFigma {
+    from {
+      transform: rotate(0deg) translateX(7rem) rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg) translateX(7rem) rotate(360deg);
+    }
+  }
+  @keyframes orbitInstagram {
+    from {
+      transform: rotate(0deg) translateX(11.5rem) rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg) translateX(11.5rem) rotate(360deg);
+    }
+  }
+  @keyframes orbitGithub {
+    from {
+      transform: rotate(0deg) translateX(15rem) rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg) translateX(15rem) rotate(360deg);
+    }
+  }
+  .btn-scrool {
+    bottom: 6rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .btn-scrool i {
+    font-size: 1.4rem;
+  }
+}
+.swiper {
+  padding: 1.2rem 0;
+}
+
+.project-item {
+  height: 40rem;
+  background: #131212;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  box-shadow: 4px 9px 14px 6px rgba(0, 0, 0, 0.31);
+  cursor: pointer;
+}
+
+.project-info {
+  padding: 2rem;
+}
+.project-info .title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.project-info .title div {
+  height: 2.5rem;
+  width: 0.2rem;
+  border-radius: 0.2rem;
+  background-color: #08D665;
+}
+.project-info .title p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+}
+.project-info .description {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2rem;
+  padding: 2rem 0;
+}
+.project-info .icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.project-info .icons a {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  background: #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.project-info .icons a i {
+  font-size: 2rem;
+  color: #131212;
+}
+.project-info .icons img {
+  height: 65%;
+}
+.project-info .social:hover {
+  background: #08D665;
+  animation: rotate 3s infinite linear;
+}
+
+.project-item:hover .title p {
+  color: #08D665;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 43px;
+}
+
+.swiper-pagination-bullets {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.swiper-pagination-bullet {
+  width: 4rem;
+  height: 0.3rem;
+  border-radius: 0.2rem;
+  background: #A49E9E;
+}
+
+.swiper-pagination-bullet-active {
+  background: #08D665;
+}
+
+@media screen and (min-width: 1441px) {
+  .swiper {
+    max-width: 1200px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .swiper {
+    max-width: 1000px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #projetos .content-head {
+    margin-top: 2rem;
+  }
+  #projetos .swiper {
+    max-width: 100%;
+    height: 100%;
+  }
+  #projetos .swiper-wrapper {
+    margin-bottom: 10rem;
+  }
+  #projetos .project-item {
+    height: 52rem;
+  }
+  #projetos .project-item img {
+    height: 20rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #projetos .project-info {
+    padding: 3rem;
+  }
+  #projetos .project-info .title div {
+    height: 3rem;
+  }
+  #projetos .project-info .title p {
+    font-size: 2rem;
+  }
+  #projetos .project-info .description {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2rem;
+    padding: 2rem 0;
+  }
+  #projetos .project-info .icons a {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  #projetos .project-info .icons a i {
+    font-size: 2rem;
+    color: #131212;
+  }
+  #projetos .project-info .icons a img {
+    height: 60%;
+    width: 60%;
+  }
+  #projetos .swiper-pagination-bullets,
+  #projetos .swiper-pagination-bullets.swiper-pagination-horizontal,
+  #projetos .swiper-pagination-custom,
+  #projetos .swiper-pagination-fraction {
+    bottom: 50px;
+  }
+  #projetos .swiper-pagination-bullet {
+    width: 3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #projetos .content-head {
+    margin-top: 1rem;
+  }
+  #projetos .swiper {
+    max-width: 95%;
+    height: 73vh;
+  }
+  #projetos .project-item {
+    height: 48rem;
+  }
+  #projetos .project-item img {
+    height: 18rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #projetos .swiper-pagination-bullets,
+  #projetos .swiper-pagination-bullets.swiper-pagination-horizontal,
+  #projetos .swiper-pagination-custom,
+  #projetos .swiper-pagination-fraction {
+    bottom: 30px;
+  }
+  #projetos .swiper-pagination-bullet {
+    width: 2.5rem;
+  }
+}
+body {
+  font-family: "Sora", sans-serif;
+  width: 100%;
+  height: 100vh;
+  color: #D9D9D9;
+  background: #131212;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+}
+
+#home,
+#contato {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  background-image: url("/assets/bg-stars.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#projetos {
+  background: #171616;
+}/*# sourceMappingURL=styles.css.map */

@@ -2,612 +2,481 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EMLX | Emilayne Rodrigues</title>
+    <!-- link google fonts - sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Sora:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- css -->
-    <link rel="stylesheet" href="src/styles/style.css" />
+    <!-- link swiper.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
-    <!-- css swiper -->
-    <link rel="stylesheet" href="src/styles/swiper-bundle.min.css" />
+    <!-- link css -->
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>Emilayne Rodrigues | Portfólio</title>
   </head>
-
   <body>
-    <!-- header starts -->
+    <!-- header fixa -->
     <header class="header">
-      <nav class="menu">
-        <input type="checkbox" id="check" />
-        <label for="check" class="check-btn">
-          <span class="hamburger"></span>
-        </label>
-        <a href="#home" class="logo">EMLX</a>
-        <ul class="nav-list" onclick="getElementById('check').checked=false;">
-          <li class="menu-item">
-            <a href="#home">HOME</a>
-          </li>
-          <li class="menu-item">
-            <a href="#sobre">SOBRE</a>
-          </li>
-          <li class="menu-item">
-            <a href="#habilidades">HABILIDADES</a>
-          </li>
-          <li class="menu-item">
-            <a href="#projetos">PROJETOS</a>
-          </li>
-          <li class="menu-item">
-            <a href="#contato">CONTATO</a>
-          </li>
-          <li class="hide-message">
-            Desenvolvido com <i class="fa-solid fa-heart"></i> por Emilayne
-            Rodrigues
-          </li>
-        </ul>
-      </nav>
+      <div class="container header-content">
+        <a href="#" class="logo uppercase">EMLX</a>
+
+        <!-- barra de navegação -->
+        <nav class="menu-nav">
+          <input type="checkbox" id="check" />
+          <label for="check" class="check-btn">
+            <span class="hamburger"></span>
+          </label>
+          <div
+            class="nav-list"
+            onclick="getElementById('check').checked=false;"
+          >
+            <a href="#home" class="nav-item uppercase">home</a>
+            <a href="#skills" class="nav-item uppercase">skills</a>
+            <a href="#projetos" class="nav-item uppercase">projetos</a>
+            <a href="#contato" class="nav-item uppercase">contato</a>
+          </div>
+        </nav>
+      </div>
     </header>
-    <!-- header ends -->
-    <!-- main starts -->
-    <main>
-      <!-- home section starts -->
-      <section id="home">
-        <div class="container">
-          <div class="content content-100 flex-reverse">
-            <!-- left content-box starts -->
-            <div class="content-box content-bs">
-              <div class="text-box">
-                <h2 class="text-box sub-text">Olá, humanos</h2>
-              </div>
-              <div class="animated-title">
-                <h1 class="home-title">
-                  SOU DEV
-                  <span class="dinamic"></span>
-                </h1>
-              </div>
-              <div class="text-area">
-                <p>
-                  Sou iniciante em programação web e mobile, estudante de
-                  informática, estou aprendendo UI/UX Designer. Para conhecer
-                  mais sobre mim, minhas habilidades e meus projetos role para
-                  baixo ou clique nas opções do menu.
-                </p>
-              </div>
+
+    <!-- home -->
+    <section id="home" class="section">
+      <div class="container flex-row">
+        <div class="flex">
+          <div class="box-tag"><p>Olá, humanos</p></div>
+          <div class="content-box">
+            <!-- titulo dinamico - typeof -->
+            <h1 class="home-title uppercase">
+              sou dev <span class="dinamic-title"></span>
+            </h1>
+            <div class="home-description">
+              Sou Emilayne, iniciante em programação web e mobile, estudante de
+              informática e UI/UX Designer. Para conhecer mais sobre minhas
+              habilidades e meus projetos role para baixo ou clique nas opções
+              do menu.
             </div>
-            <!-- left content-box ends -->
-            <!-- right content-box starts -->
-            <div class="content-box">
-              <img class="img" src="src/img/cat2.svg" alt="cat" />
-            </div>
-            <!-- right content-box ends -->
           </div>
         </div>
-      </section>
-      <!-- home section ends -->
-      <!-- sobre section starts -->
-      <section id="sobre">
-        <div class="container">
-          <!-- container title starts -->
-          <div class="container-title">
-            <h1 class="title">Sobre</h1>
-            <div class="sub-title">
-              <div class="line"></div>
-              <h4>Quem sou eu</h4>
-              <div class="line"></div>
+        <div class="flex">
+          <img
+            class="home-img"
+            src="assets/cat-home.svg"
+            alt="Gato astronauta"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="section">
+      <div class="container flex-column">
+        <div class="content-head">
+          <h1 class="uppercase">o que sei</h1>
+          <p>
+            Sou de Manaus e atualmente estudante de TI em busca de novos
+            desafios
+            <span class="hidden">
+              para expandir minha expertise em desenvolvimento web e mobile
+            </span>
+            . Meu foco é aprender e aprimorar minhas habilidades
+            <span class="hidden"> nas tecnologias em alta</span>
+          </p>
+        </div>
+
+        <div class="skill-content">
+          <div class="tag hidden">
+            <span>Skills</span>
+            <div class="line"></div>
+          </div>
+          <div class="skills">
+            <!-- html -->
+            <div class="skill-item">
+              <img src="assets/skills/html.png" alt="Logo HTML" />
+              <span class="uppercase">html</span>
+            </div>
+            <!-- css -->
+            <div class="skill-item">
+              <img src="assets/skills/css.png" alt="Logo HTML" />
+              <span class="uppercase">css</span>
+            </div>
+            <!-- js -->
+            <div class="skill-item">
+              <img src="assets/skills/javascript.png" alt="Logo HTML" />
+              <span class="uppercase">javascript</span>
+            </div>
+            <!-- c/c++ -->
+            <div class="skill-item">
+              <img src="assets/skills/c.png" alt="Logo HTML" />
+              <span class="uppercase">c/c++</span>
+            </div>
+            <!-- react native -->
+            <div class="skill-item">
+              <img src="assets/skills/react-native.png" alt="Logo HTML" />
+              <span class="uppercase">react native</span>
+            </div>
+            <!-- php -->
+            <div class="skill-item">
+              <img src="assets/skills/php.png" alt="Logo HTML" />
+              <span class="uppercase">php</span>
+            </div>
+            <!-- figma -->
+            <div class="skill-item">
+              <img src="assets/skills/figma.png" alt="Logo HTML" />
+              <span class="uppercase">figma</span>
+            </div>
+            <!-- github -->
+            <div class="skill-item">
+              <img src="assets/skills/github.png" alt="Logo HTML" />
+              <span class="uppercase">github</span>
+            </div>
+            <!-- mysql -->
+            <div class="skill-item">
+              <img src="assets/skills/mysql.png" alt="Logo HTML" />
+              <span class="uppercase">mysql</span>
+            </div>
+            <!-- vs code -->
+            <div class="skill-item">
+              <img src="assets/skills/vscode.png" alt="Logo HTML" />
+              <span class="uppercase">vs code</span>
             </div>
           </div>
-          <!-- container title ends -->
-          <div class="content flex-row">
-            <!-- left content-box starts-->
-            <div class="content-box img-content">
-              <img class="img" src="src/img/dev.svg" alt="" />
-            </div>
-            <!--  content-box ends-->
-            <!-- right content-box starts-->
-            <div class="content-box content-sa">
-              <div class="animated-name">
-                <h1 class="name title"></h1>
-              </div>
-              <div class="text-area gap">
-                <p>
-                  Sou apaixonada por animais, plantas e front-end, tenho seis
-                  lindos gatos, muitas plantas e habilidades ainda em
-                  desenvolvimento em design e programação.
-                </p>
-                <p class="hide">
-                  Sonho ser programadora web e mobile, mas também possuir skills
-                  em manutenção e suporte de hardwares e redes, por este motivo
-                  venho aprimorando minhas compentências dentro da área de TI e
-                  tentado explorar minhas atuais habilidades.
-                </p>
-                <p>
-                  Para conhecer um pouco mais sobre cursos, diplomas e
-                  experiências que adquiri nesses anos, clique no botão abaixo e
-                  baixe meu currículo :)
-                </p>
-              </div>
-              <a href="#" class="btn"> Download | CV</a>
-            </div>
-            <!-- right content-box ends-->
+          <div class="detail-lines hidden">
+            <div></div>
+            <!-- adicionar mais se necessário -->
           </div>
         </div>
-      </section>
-      <!-- sobre section ends -->
-      <!-- habilidades section starts -->
-      <section id="habilidades">
-        <div class="container bg-color">
-          <!-- container title starts -->
-          <div class="container-title container-title-hab">
-            <h1 class="title">Habilidades</h1>
-            <div class="sub-title">
-              <div class="line"></div>
-              <h4>
-                Ferramentas e tecnologias
-                <span class="hide">que tenho estudado e aperfeiçoado</span>
-              </h4>
-              <div class="line"></div>
-            </div>
-          </div>
-          <!-- container title ends -->
-          <div class="content content-hab">
-            <!-- content-box starts-->
-            <div class="box">
-              <!-- habilidades starts-->
-              <div class="box-item">
-                <img
-                  src="src/img/img-habilidades/html.png"
-                  alt="html"
-                  class="hab-img"
-                />
-                <img
-                  src="src/img/img-habilidades/html2.png"
-                  alt="html"
-                  class="hab-img1"
-                />
-              </div>
+      </div>
+    </section>
 
-              <div class="box-item">
-                <img
-                  src="src/img/img-habilidades/css.png"
-                  alt="css"
-                  class="hab-img"
-                />
-                <img
-                  src="src/img/img-habilidades/css2.png"
-                  alt="css"
-                  class="hab-img1"
-                />
-              </div>
-
-              <div class="box-item">
-                <img
-                  src="src/img/img-habilidades/javascript.png"
-                  alt="Javascript"
-                  class="hab-img"
-                />
-                <img
-                  src="src/img/img-habilidades/javascript2.png"
-                  alt="JavaScript"
-                  class="hab-img1"
-                />
-              </div>
-
-              <div class="box-item">
-                <img
-                  src="src/img/img-habilidades/c++.png"
-                  alt="C++"
-                  class="hab-img"
-                />
-                <img
-                  src="src/img/img-habilidades/c++2.png"
-                  alt="C++"
-                  class="hab-img1"
-                />
-              </div>
-
-              <div class="box-item">
-                <img
-                  src="src/img/img-habilidades/react-native.png"
-                  alt="React-Native"
-                  class="hab-img"
-                />
-                <img
-                  src="src/img/img-habilidades/react-native2.png"
-                  alt="React-Native"
-                  class="hab-img1"
-                />
-              </div>
-
-              <div class="box-item">
-                <img
-                  src="src/img/img-habilidades/git.png"
-                  class="h-img"
-                  alt="Github"
-                />
-              </div>
-
-              <div class="box-item">
-                <img
-                  src="src/img/img-habilidades/figma.png"
-                  alt="Figma"
-                  class="hab-img"
-                />
-                <img
-                  src="src/img/img-habilidades/figma2.png"
-                  alt="Figma"
-                  class="hab-img1"
-                />
-              </div>
-
-              <div class="box-item">
-                <img
-                  src="src/img/img-habilidades/vscode.png"
-                  alt="VSCode"
-                  class="hab-img"
-                />
-                <img
-                  src="src/img/img-habilidades/vscode2.png"
-                  alt="VSCode"
-                  class="hab-img1"
-                />
-              </div>
-              <!-- habilidades ends -->
-            </div>
-            <!-- content-box ends-->
-          </div>
+    <!-- projetos -->
+    <section id="projetos" class="section">
+      <div class="container flex-column">
+        <div class="content-head">
+          <h1 class="uppercase">projetos</h1>
+          <p>
+            Projetos e templates concluídos e em andamento
+            <span class="hidden"
+              >desenvolvimentos com as tecnologias citadas nas Skills</span
+            >
+          </p>
         </div>
-      </section>
-      <!-- habilidades section ends -->
-      <!-- projetos section starts -->
-      <section id="projetos">
-        <div class="container">
-          <!-- container title starts -->
-          <div class="container-title">
-            <h1 class="title">Projetos</h1>
-            <div class="sub-title">
-              <div class="line"></div>
-              <h4>Desenvolvidos e em criação</h4>
-              <div class="line"></div>
-            </div>
-          </div>
-
-          <div class="swiper slide-container">
-            <div class="slide-content mySwiper">
-              <div class="card-wrapper swiper-wrapper">
-                <!-- program web -->
-                <div class="swiper-slide card">
-                  <div class="image-content">
-                    <div class="card-image">
-                      <img
-                        src="src/img/img-projetos/site.png"
-                        alt=""
-                        class="card-img"
-                      />
-                    </div>
+        <!-- Slider main container -->
+        <div class="flex-row project-content">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper projects">
+              <!-- te controla -->
+              <div class="swiper-slide project-item">
+                <img
+                  src="assets/projetos/te-controla.png"
+                  alt="Aplicativo Te Controla"
+                />
+                <div class="project-info">
+                  <div class="title">
+                    <div></div>
+                    <p>Te Controla</p>
                   </div>
-                  <div class="card-content">
-                    <h2 class="card-name">ProgramWeb</h2>
-                    <p class="description">
-                      Site desenvolvido como projeto final do curso Programação
-                      Web Básico da Fundação Paulo Feitosa com uso de HTML, CSS,
-                      JavaScript e BootStrap.
-                    </p>
-                    <div class="btn-content">
-                      <a
-                        class="btn-link"
-                        href="https://emilaynerodrigues.github.io/Projeto-ProgramWeb/"
-                        target="_blank"
-                        ><i class="fa-solid fa-globe"></i>
-                      </a>
-                      <a
-                        class="btn-link"
-                        href="https://github.com/emilaynerodrigues/Projeto-ProgramWeb"
-                        target="_blank"
-                        ><i class="fa-brands fa-github"></i>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="hover-effect"></div>
-                </div>
-
-                <!-- historico -->
-                <div class="swiper-slide card">
-                  <div class="image-content">
-                    <div class="card-image">
-                      <img
-                        src="src/img/img-projetos/historico.png"
-                        alt=""
-                        class="card-img"
-                      />
-                    </div>
-                  </div>
-                  <div class="card-content">
-                    <h2 class="card-name">Histórico Escolar</h2>
-                    <p class="description">
-                      Minisistema de boletim escolar desenvolvido em C. O
-                      programa é modular e conta com funções diretas e
-                      auxiliares para cada opção do menu.
-                    </p>
-                    <div class="btn-content">
-                      <a
-                        class="btn-link"
-                        href="https://github.com/emilaynerodrigues/Projeto-HistoricoEscolarC-"
-                        target="_blank"
-                        ><i class="fa-brands fa-github"></i>
-                      </a>
-                    </div>
+                  <p class="description">
+                    Aplicativo mobile de controle financeiro que está em fase de
+                    desenvolvimento e teste com Javascript, React Native e Expo
+                    para plataforma Android.
+                  </p>
+                  <div class="icons">
+                    <a
+                      href="https://github.com/emilaynerodrigues/appTeControla"
+                      target="_blank"
+                      class="social"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.figma.com/file/Fnw61AavzphiW40P2aAPs7/app-te-controla?type=design&mode=design&t=H2GvtoKC4eLiFIHl-1"
+                      target="_blank"
+                      class="social"
+                    >
+                      <i class="fa-brands fa-figma"></i>
+                    </a>
                   </div>
                 </div>
+              </div>
 
-                <!-- te controla -->
-                <div class="swiper-slide card">
-                  <div class="image-content">
-                    <div class="card-image">
-                      <img
-                        src="src/img/img-projetos/te-controla.png"
-                        alt=""
-                        class="card-img"
-                      />
-                    </div>
+              <!-- starship -->
+              <div class="swiper-slide project-item">
+                <img src="assets/projetos/starship.png" alt="Site Starship" />
+                <div class="project-info">
+                  <div class="title">
+                    <div></div>
+                    <p>Starship</p>
                   </div>
-                  <div class="card-content">
-                    <h2 class="card-name">Te Controla</h2>
-                    <p class="description">
-                      Aplicativo mobile de controle financeiro que está em fase
-                      de desenvolvimento e teste com JavaScript, React Native e
-                      Expo para plataforma Android.
-                    </p>
-                    <div class="btn-content">
-                      <a
-                        class="btn-link"
-                        href="https://www.figma.com/file/Fnw61AavzphiW40P2aAPs7/te-controla?node-id=0%3A1&t=cD4GfFvkCYItkhbF-1"
-                        target="_blank"
-                        ><i class="fa-brands fa-figma"></i>
-                      </a>
-                      <a
-                        class="btn-link"
-                        href="https://github.com/emilaynerodrigues/appTeControla"
-                        target="_blank"
-                      >
-                        <i class="fa-brands fa-github"></i>
-                      </a>
-                    </div>
+                  <p class="description">
+                    Este projeto é uma página web que exibe a mensagem "Website
+                    em construção" e inclui um contador de dias para a entrega
+                    da página.
+                  </p>
+                  <div class="icons">
+                    <a
+                      href="https://emilaynerodrigues.github.io/startship-coming-soon/"
+                      target="_blank"
+                      class="social"
+                    >
+                      <img
+                        src="assets/icons/globe.svg"
+                        alt="Link do Starship | Coming Soon"
+                      />
+                    </a>
+                    <a
+                      href="https://github.com/emilaynerodrigues/startship-coming-soon"
+                      target="_blank"
+                      class="social"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.figma.com/file/ktqN5Ld60dqzGojEoUxVGB/coming-soon?type=design&mode=design&t=H2GvtoKC4eLiFIHl-1"
+                      target="_blank"
+                      class="social"
+                    >
+                      <i class="fa-brands fa-figma"></i>
+                    </a>
                   </div>
                 </div>
+              </div>
 
-                <!-- relogio animado -->
-                <div class="swiper-slide card">
-                  <div class="image-content">
-                    <div class="card-image">
-                      <img
-                        src="src/img/img-projetos/teu-espaco.png"
-                        alt=""
-                        class="card-img"
-                      />
-                    </div>
+              <!-- relogio animado -->
+              <div class="swiper-slide project-item">
+                <img
+                  src="assets/projetos/teu-espaco.png"
+                  alt="Site Relogio Dinamico"
+                />
+                <div class="project-info">
+                  <div class="title">
+                    <div></div>
+                    <p>Relógio Animado</p>
                   </div>
-                  <div class="card-content">
-                    <h2 class="card-name">Relógio Animado</h2>
-                    <p class="description">
-                      Site desenvolvido com HTML, CSS e Javascript com o objeto
-                      Date. O Relógio Animado mostra o horário atual e o dia da
-                      semana no meio do espaço.
-                    </p>
-                    <div class="btn-content">
-                      <a
-                        class="btn-link"
-                        href="https://emilaynerodrigues.github.io/relogio-animado/"
-                        target="_blank"
-                        ><i class="fa-solid fa-globe"></i>
-                      </a>
-
-                      <a
-                        class="btn-link"
-                        href="https://www.figma.com/file/6TdF47q6OPgtc5cynd4psb/relogio-animado?type=design&t=ZyMBtIOhZDQAs665-0"
-                        target="_blank"
-                        ><i class="fa-brands fa-figma"></i>
-                      </a>
-
-                      <a
-                        class="btn-link"
-                        href="https://github.com/emilaynerodrigues/relogio-animado"
-                        target="_blank"
-                      >
-                        <i class="fa-brands fa-github"></i>
-                      </a>
-                    </div>
+                  <p class="description">
+                    Site desenvolvido com HTML, CSS e Javascript com o objeto
+                    Date. O Relógio Animado mostra o horário atual e o dia da
+                    semana no meio do espaço.
+                  </p>
+                  <div class="icons">
+                    <a
+                      href="https://emilaynerodrigues.github.io/relogio-animado/"
+                      target="_blank"
+                      class="social"
+                    >
+                      <img
+                        src="assets/icons/globe.svg"
+                        alt="Link do Relogio Animado"
+                      />
+                    </a>
+                    <a
+                      href="https://github.com/emilaynerodrigues/relogio-animado"
+                      target="_blank"
+                      class="social"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.figma.com/file/6TdF47q6OPgtc5cynd4psb/relogio-animado?type=design&mode=design&t=H2GvtoKC4eLiFIHl-1"
+                      target="_blank"
+                      class="social"
+                    >
+                      <i class="fa-brands fa-figma"></i>
+                    </a>
                   </div>
                 </div>
+              </div>
 
-                <!-- starship -->
-                <div class="swiper-slide card">
-                  <div class="image-content">
-                    <div class="card-image">
-                      <img
-                        src="src/img/img-projetos/starship.png"
-                        alt=""
-                        class="card-img"
-                      />
-                    </div>
+              <!-- one piece -->
+              <div class="swiper-slide project-item">
+                <img
+                  src="assets/projetos/one-piece.png"
+                  alt="Site One Piece"
+                />
+                <div class="project-info">
+                  <div class="title">
+                    <div></div>
+                    <p>One Piece</p>
                   </div>
-                  <div class="card-content">
-                    <h2 class="card-name">Starship | Coming Soon </h2>
-                    <p class="description">
-                      Este projeto é uma página web que exibe a mensagem
-                      "Website em construção" e inclui um contador de dias para
-                      a entrega da página.
-                    </p>
-                    <div class="btn-content">
-                      <a
-                        class="btn-link"
-                        href="https://emilaynerodrigues.github.io/startship-coming-soon/"
-                        target="_blank"
-                        ><i class="fa-solid fa-globe"></i>
-                      </a>
-
-                      <a
-                        class="btn-link"
-                        href="https://www.figma.com/file/ktqN5Ld60dqzGojEoUxVGB/coming-soon?type=design&t=ZyMBtIOhZDQAs665-0"
-                        target="_blank"
-                        ><i class="fa-brands fa-figma"></i>
-                      </a>
-
-                      <a
-                        class="btn-link"
-                        href="https://github.com/emilaynerodrigues/startship-coming-soon"
-                        target="_blank"
-                      >
-                        <i class="fa-brands fa-github"></i>
-                      </a>
-                    </div>
+                  <p class="description">
+                    Projeto desenvolvido durante evento promovido pelo canal
+                    "Dev em Dobro". O objetivo do site é descrever brevemente a
+                    história dos personagens do One Piece.
+                  </p>
+                  <div class="icons">
+                    <a
+                      href="https://emilaynerodrigues.github.io/one-piece/"
+                      target="_blank"
+                      class="social"
+                    >
+                      <img
+                        src="assets/icons/globe.svg"
+                        alt="Link do One Piece Characters"
+                      />
+                    </a>
+                    <a
+                      href="https://github.com/emilaynerodrigues/one-piece"
+                      target="_blank"
+                      class="social"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
                   </div>
                 </div>
+              </div>
 
-                <!-- em breve -->
-                <div class="swiper-slide card card-breve">
-                  <div class="image-content">
-                    <div class="card-image breve"></div>
+              <!-- program web -->
+              <div class="swiper-slide project-item">
+                <img src="assets/projetos/site.png" alt="Site ProgramWeb" />
+                <div class="project-info">
+                  <div class="title">
+                    <div></div>
+                    <p>ProgramWeb</p>
                   </div>
-                  <div class="card-content">
-                    <h2 class="card-name">Loading...</h2>
-                    <p class="description">Estou preparando algo incrível!</p>
+                  <p class="description">
+                    Site desenvolvido como projeto final do curso Programação
+                    Web Básico da Fundação Paulo Feitosa com uso de HTML, CSS,
+                    JavaScript e BootStrap.
+                  </p>
+                  <div class="icons">
+                    <a
+                      href="https://emilaynerodrigues.github.io/Projeto-ProgramWeb/"
+                      target="_blank"
+                      class="social"
+                    >
+                      <img
+                        src="assets/icons/globe.svg"
+                        alt="Link do ProgramWeb"
+                      />
+                    </a>
+                    <a
+                      href="https://github.com/emilaynerodrigues/Projeto-ProgramWeb"
+                      target="_blank"
+                      class="social"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- historico -->
+              <div class="swiper-slide project-item">
+                <img
+                  src="assets/projetos/historico.png"
+                  alt="Histórico Escolar"
+                />
+                <div class="project-info">
+                  <div class="title">
+                    <div></div>
+                    <p>Histórico Escolar</p>
+                  </div>
+                  <p class="description">
+                    Minisistema de boletim escolar desenvolvido em C. O programa
+                    é modular e conta com funções diretas e auxiliares para cada
+                    opção do menu.
+                  </p>
+                  <div class="icons">
+                    <a
+                      href="https://github.com/emilaynerodrigues/Projeto-HistoricoEscolarC-"
+                      target="_blank"
+                      class="social"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="swiper-pagination"></div>
           </div>
         </div>
-      </section>
-      <!-- projetos section ends -->
-      <!-- contato section starts -->
-      <section id="contato">
-        <div class="container">
-          <div class="content content-100">
-            <!-- content-box starts-->
-            <div class="content-box content-bs content-start">
-              <h1 class="title title-contato">entre em contato</h1>
-              <h4>Clique nos planetas e acesse minhas redes sociais</h4>
-              <div class="planets">
-                <div class="sun-light">
-                  <img src="src/img/happy-sun.svg" alt="" class="sun" />
-                </div>
-                <div class="linkedin-outline outline">
-                  <a class="planet linkedin" href="" target="_blank"
-                    ><i class="fa-brands fa-linkedin-in"></i
-                  ></a>
-                </div>
-                <div class="figma-outline outline">
-                  <a
-                    class="planet figma"
-                    href="https://www.figma.com/files/user/1097236190827831037?fuid=1097236190827831037"
-                    target="_blank"
-                    ><i class="fa-brands fa-figma"></i
-                  ></a>
-                </div>
-                <div class="instagram-outline outline">
-                  <a
-                    class="planet instagram"
-                    href="https://www.instagram.com/emilaynx/"
-                    target="_blank"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                </div>
-                <div class="github-outline outline">
-                  <a
-                    class="planet github"
-                    href="https://github.com/emilaynerodrigues"
-                    target="_blank"
-                    ><i class="fa-brands fa-github"></i
-                  ></a>
-                </div>
-              </div>
+      </div>
+    </section>
+
+    <!-- contato -->
+    <section id="contato" class="section">
+      <div class="container flex-column flex-contato">
+        <div class="contato-content">
+          <div class="planets">
+            <div class="sun">
+              <img src="assets/sun-contato.svg" alt="" />
             </div>
-            <!-- content-box ends-->
-            <!-- content-box starts-->
-            <div class="content-box bg-color hide">
-              <div class="content-form">
-                <form
-                  action="https://formsubmit.co/68e0b7aa0430bd3153171adcd9d59dca"
-                  method="POST"
+
+            <!-- figma -->
+            <div class="figma-outline outline">
+              <a
+                class="planet figma hover-effect"
+                href="https://www.figma.com/files/user/1097236190827831037?fuid=1097236190827831037"
+                target="_blank"
+                data-image="/assets/metaverso.svg"
+                ><i class="fa-brands fa-figma"></i
+              ></a>
+            </div>
+
+            <!-- instagram -->
+            <div class="instagram-outline outline">
+              <a
+                class="planet instagram hover-effect"
+                href="https://www.instagram.com/emilaynx/"
+                target="_blank"
+                data-image="/assets/metaverso.svg"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+
+            <!-- github -->
+            <div class="outline github-outline">
+              <a
+                class="github planet hover-effect"
+                href="https://github.com/emilaynerodrigues"
+                target="_blank"
+                data-image="/assets/metaverso.svg"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hover-content">
+            <div class="content-head">
+              <h1 class="uppercase">entre em contato</h1>
+              <p>
+                Clique nos plantas e acesse minhas redes sociais.
+                <span class="hidden">
+                  Para melhor experiência acesse o portfólio pelo
+                  computador.</span
                 >
-                  <h3>Envie uma mensagem</h3>
-                  <!-- Messagem mostrada quando chegar o e-mail -->
-                  <input
-                    type="hidden"
-                    name="_subject"
-                    value="Alguém enviou uma mensagem pelo Portfolio!"
-                  />
-
-                  <!-- Caminho da página de agradecimento -->
-                  <input
-                    type="hidden"
-                    name="_next"
-                    value="https://emilaynerodrigues.github.io/Portfolio/src/pages/index.html"
-                  />
-
-                  <!-- reCaptcha desabilitada -->
-                  <input type="hidden" name="_captcha" value="false" /><input
-                    type="hidden"
-                    name="_captcha"
-                    value="false"
-                  />
-                  <!-- Campos do formulários a seguir -->
-                  <input
-                    type="text"
-                    name="Nome"
-                    id=""
-                    placeholder="Nome:"
-                    class="input-text"
-                    required
-                  />
-                  <input
-                    type="email"
-                    name="E-mail"
-                    id=""
-                    placeholder="E-mail:"
-                    class="input-text"
-                    required
-                  />
-                  <input
-                    type="text"
-                    name="Assunto"
-                    id=""
-                    placeholder="Assunto:"
-                    class="input-text"
-                    required
-                  />
-                  <h4>
-                    Diga o que achou sobre o portfólio e dê dicas de novos
-                    projetos:
-                  </h4>
-                  <textarea
-                    class="input-msg"
-                    placeholder="Mensagem:"
-                    name="Mensagem"
-                    id=""
-                    cols="30"
-                    rows="8"
-                    required
-                  ></textarea>
-                  <button type="submit" class="btn">Enviar</button>
-                </form>
-              </div>
+              </p>
             </div>
-            <!-- content-box ends-->
+
+            <div class="image-container hidden"></div>
           </div>
         </div>
-      </section>
-      <!-- contato section ends -->
-      <a href="" onclick="scrollToTop()" class="btn-back"
-        ><i class="fa-solid fa-arrow-up"></i
-      ></a>
-    </main>
-    <!-- main ends -->
+        <!-- footer -->
+        <div class="footer">
+          <div class="container">
+            <p>
+              Desenvolvido com <span><i class="fa-solid fa-heart"></i></span>por
+              Emilayne Rodrigues
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- js swiper -->
-    <script src="src/script/swiper-bundle.min.js"></script>
-
-    <!-- js -->
-    <script src="src/script/main.js"></script>
+    <!-- button scrool to top -->
+    <button class="btn-scrool" onclick="scrollToTop()">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <!-- js font awesome -->
     <script
@@ -615,10 +484,19 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- js type it -->
+    <!-- type it js -->
     <script
       crossorigin="anonymous"
       src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"
     ></script>
+
+    <!-- swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- script js -->
+    <script src="script/main.js"></script>
+
+    <!-- configurações de scrool -->
+    <script src="script/scrool.js"></script>
   </body>
 </html>

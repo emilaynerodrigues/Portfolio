@@ -1,0 +1,114 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    border-bottom: .1rem solid $transparent-border;
+    transition: all .3s;
+}
+
+.header.active-header {
+    background-color: $black-normal;
+}
+
+.header-content {
+    padding: 1.2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Sora', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $green-normal;
+}
+
+#check,
+.check-btn {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    gap: 5rem;
+}
+
+.nav-item {
+    color: $white-normal;
+    font-weight: 500;
+    transition: .3s all;
+}
+
+.nav-item:hover {
+    color: $green-normal;
+    font-weight: 600;
+}
+
+@media (max-width: 796px) {
+    header {
+        background-color: $black-normal;
+    }
+
+    nav {
+        flex-direction: row-reverse;
+    }
+
+    .nav-list {
+        position: absolute;
+        width: 50%;
+        min-height: calc(100vh - 4rem);
+        background-color: $black-normal;
+        top: 4rem;
+        right: -100%;
+        flex-direction: column;
+        gap: 5rem;
+        padding-top: 2rem;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    .check-btn {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: $green-normal;
+    }
+
+    .hamburger {
+        border-top: 0.2rem solid;
+        width: 2rem;
+        color: $green-normal;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: " ";
+        display: block;
+        border-top: 0.2rem solid;
+        width: 2rem;
+        background: currentColor;
+        margin-top: 0.4rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    #check:checked~.nav-list {
+        right: 0;
+    }
+
+    #check:checked~.check-btn .hamburger {
+        border-top-color: transparent;
+    }
+
+    #check:checked~.check-btn .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #check:checked~.check-btn .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.6rem;
+    }
+}

@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+@import "partials/_colors";
+@import "partials/_header";
+@import "partials/_layout";
+@import "partials/swiper";
+
+body {
+    font-family: 'Sora', sans-serif;
+    width: 100%;
+    height: 100vh;
+    color: $white-normal;
+    background: $black-normal;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+section {
+    width: 100%;
+}
+
+#home,
+#contato {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    // height: calc(100% / 4);
+    background-image: url("assets/bg-stars.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#projetos {
+    background: $black-light;
+}

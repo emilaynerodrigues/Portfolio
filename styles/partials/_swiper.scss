@@ -1,0 +1,295 @@
+.swiper {
+    padding: 1.2rem 0;
+}
+
+// .swiper-wrapper {
+//     padding: 2rem 0;
+// }
+
+.project-item {
+    height: 40rem;
+    background: $black-normal;
+    border-radius: .7rem;
+    overflow: hidden;
+    box-shadow: 4px 9px 14px 6px rgba(0, 0, 0, 0.31);
+    cursor: pointer;
+}
+
+.project-info {
+    padding: 2rem;
+
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        div {
+            height: 2.5rem;
+            width: .2rem;
+            border-radius: .2rem;
+            background-color: $green-normal;
+        }
+
+        p {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: .15rem;
+            transition: all .3s;
+        }
+    }
+
+    .description {
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 2rem;
+        padding: 2rem 0;
+
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+
+        a {
+            height: 3.5rem;
+            width: 3.5rem;
+            border-radius: 50%;
+            background: $white-normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s;
+
+            i {
+                font-size: 2rem;
+                color: $black-normal;
+            }
+
+        }
+
+        img {
+            height: 65%;
+        }
+
+    }
+
+    .social:hover {
+        background: $green-normal;
+        animation: rotate 3s infinite linear;
+
+    }
+}
+
+.project-item:hover {
+    .title {
+        p {
+            color: $green-normal;
+        }
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 43px;
+}
+
+.swiper-pagination-bullets {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.swiper-pagination-bullet {
+    width: 4rem;
+    height: .3rem;
+    border-radius: .2rem;
+    background: $gray-light;
+}
+
+.swiper-pagination-bullet-active {
+    background: $green-normal;
+}
+
+// telas maiores
+@media screen and (min-width: 1441px) {
+    .swiper {
+        max-width: 1200px;
+        height: 500px;
+    }
+}
+
+//laptops
+@media screen and (max-width: 1440px) {
+
+    .swiper {
+        max-width: 1000px;
+        height: 500px;
+    }
+}
+
+//tablets
+@media screen and (max-width: 768px) {
+    #projetos {
+        .content-head {
+            margin-top: 2rem;
+        }
+
+        .swiper {
+            max-width: 100%;
+            height: 100%;
+            // background-color: aqua;
+        }
+
+        .swiper-wrapper {
+            margin-bottom: 10rem;
+        }
+
+
+        .project-item {
+            height: 52rem;
+
+            img {
+                height: 20rem;
+                object-fit: cover;
+            }
+        }
+
+        .project-info {
+            padding: 3rem;
+
+            .title {
+
+                div {
+                    height: 3rem;
+                }
+
+                p {
+                    font-size: 2rem;
+                }
+            }
+
+            .description {
+                font-size: 1.4rem;
+                font-weight: 300;
+                line-height: 2rem;
+                padding: 2rem 0;
+
+            }
+
+            .icons {
+                a {
+                    height: 3.5rem;
+                    width: 3.5rem;
+
+                    i {
+                        font-size: 2rem;
+                        color: $black-normal
+                    }
+
+                    img {
+                        height: 60%;
+                        width: 60%;
+                    }
+                }
+            }
+        }
+
+        .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+            bottom: 50px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 3rem;
+        }
+
+    }
+}
+
+//telas menores
+@media screen and (max-width: 480px) {
+    #projetos {
+        .content-head {
+            margin-top: 1rem;
+        }
+
+        .swiper {
+            max-width: 95%;
+            height: 73vh;
+            // background-color: aqua;
+        }
+
+        .project-item {
+            height: 48rem;
+
+            img {
+                height: 18rem;
+                object-fit: cover;
+            }
+        }
+
+        // .project-info {
+        //     padding: 3rem;
+
+        //     .title {
+
+        //         div {
+        //             height: 3rem;
+        //         }
+
+        //         p {
+        //             font-size: 2rem;
+        //         }
+        //     }
+
+        //     .description {
+        //         font-size: 1.4rem;
+        //         font-weight: 300;
+        //         line-height: 2rem;
+        //         padding: 2rem 0;
+
+        //     }
+
+        //     .icons {
+        //         a {
+        //             height: 3.5rem;
+        //             width: 3.5rem;
+
+        //             i {
+        //                 font-size: 2rem;
+        //                 color: $black-normal
+        //             }
+
+        //             img {
+        //                 height: 60%;
+        //                 width: 60%;
+        //             }
+        //         }
+        //     }
+        // }
+
+        .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+            bottom: 30px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 2.5rem;
+        }
+
+    }
+}
